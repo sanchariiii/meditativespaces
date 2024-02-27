@@ -1,0 +1,182 @@
+body {
+
+    font-family: "droid-sans-mono", monospace;
+    font-size: 18px;
+    src:url(https://use.typekit.net/qxh7obn.css);
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    
+    
+}
+
+.textbox{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    color: rgb(179, 206, 156);
+    font-size: 18px;
+}
+
+.ball {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(179, 206, 156);
+    border-radius: 50%;
+    position: fixed; /* or 'absolute' if you prefer */
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(0); /* Adjusted to combine both translations */
+    animation: bounce 5s infinite ease-in-out;
+  }
+
+    @keyframes bounce {
+        0%, 100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(-500px);
+        }
+      }
+
+
+      .ball2 {
+        width: 70px;
+        height: 70px;
+        background-color: rgba(179, 206, 156, 0.781);
+        border-radius: 50%;
+        position: fixed; /* or 'absolute' if you prefer */
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) translateY(0); /* Adjusted to combine both translations */
+        animation: bounce2 6s infinite ease-in-out;
+      }
+    
+        @keyframes bounce2 {
+            0%, 100% {
+              transform: translateX(-50%) translateY(0);
+            }
+            50% {
+              transform: translateX(-50%) translateY(-510px);
+            }
+          }
+
+          .ball3 {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(179, 206, 156, 0.641);
+            border-radius: 50%;
+            position: fixed; /* or 'absolute' if you prefer */
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%) translateY(0); /* Adjusted to combine both translations */
+            animation: bounce3 7s infinite ease-in-out;
+          }
+        
+            @keyframes bounce3 {
+                0%, 100% {
+                  transform: translateX(-50%) translateY(0);
+                }
+                50% {
+                  transform: translateX(-50%) translateY(-520px);
+                }
+              }
+
+              .ball4 {
+                width: 50px;
+                height: 50px;
+                background-color: rgba(179, 206, 156, 0.486);
+                border-radius: 50%;
+                position: fixed; /* or 'absolute' if you prefer */
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%) translateY(0); /* Adjusted to combine both translations */
+                animation: bounce4 8s infinite ease-in-out;
+              }
+            
+                @keyframes bounce4 {
+                    0%, 100% {
+                      transform: translateX(-50%) translateY(0);
+                    }
+                    50% {
+                      transform: translateX(-50%) translateY(-530px);
+                    }
+                  }
+
+                  .ball5 {
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgba(179, 206, 156, 0.429);
+                    border-radius: 50%;
+                    position: fixed; /* or 'absolute' if you prefer */
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%) translateY(0); /* Adjusted to combine both translations */
+                    animation: bounce3 9s infinite ease-in-out;
+                  }
+                
+                    @keyframes bounce3 {
+                        0%, 100% {
+                          transform: translateX(-50%) translateY(0);
+                        }
+                        50% {
+                          transform: translateX(-50%) translateY(-540px);
+                        }
+                      }
+
+
+.circleicon{
+                        width:20px;
+                        height:20px;
+                        background-color: rgb(179, 206, 156);
+                        border-radius: 50%;
+                        position: absolute;
+                        top:1%;
+                        right:1%;
+                        padding-top: 1%;
+                        padding-right: 1%;
+                        transform: translate(3%,3%);
+                        animation: buttonani 2s ease-in forwards;
+                        animation-delay: 9s;
+                    }
+                    #menu {
+                      background:transparent;
+                      position:fixed;
+                      top:0;
+                      right:-270px;
+                      width:400px;
+                      height:100vh;
+                      transition:all 0.2s;
+                      overflow: hidden;
+                  }
+                  
+                  #menu:hover {
+                      background:rgb(179, 206, 156);
+                      right:0;
+                  }
+                  
+                  #menu:hover .open {
+                      opacity:0;
+                  }
+                  
+                  .menu-text {
+                      color: #333; 
+                      font-size: 12px;
+                      opacity: 0;
+                      transition: opacity 0.6s;
+                      padding-left: 3%;
+                      padding-top: 3%;
+                      line-height: 18px;
+                      
+                    }
+                  
+                    #menu:hover .menu-text{
+                      opacity: 1;
+                    }
+                  
+                    a{
+                      color: black;
+                      text-decoration:underline;
+                      
+                    }                

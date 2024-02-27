@@ -1,0 +1,177 @@
+@keyframes colorChange {
+    0% {
+        transform: scale(1);
+        background-color: white;
+    }
+    40% {
+        transform: scale(0.5);
+        background-color: rgb(189, 220, 252);
+    }
+    60% {
+        transform: scale(0.5);
+        background-color: rgb(189, 220, 252);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: white;
+    }
+}
+/* okay sooooo lmao this was so fun heheeee  */
+@keyframes text1 {
+
+    0% {
+        transform: translate(-50%, -50%);
+        font-size: 24px; 
+        opacity: 1;
+
+    }
+
+    100%{
+        transform: translate(-50%, -50%);
+        font-size: 0px; 
+        opacity: 0;
+    }
+    
+}
+
+@keyframes text2 {
+
+    0% {
+        transform: translate(-50%, -50%);
+        font-size: 0px; 
+        opacity: 0;
+
+    }
+
+    20%{
+        transform: translate(-50%, -50%);
+        font-size: 24px; 
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: translate(-50%, -50%);
+        font-size: 0px; 
+        opacity: 0;
+    }
+    
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "droid-sans-mono", monospace;
+    font-size: 18px;
+    src:url(https://use.typekit.net/qxh7obn.css)
+    
+}
+
+.textbox{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    color: rgb(189, 220, 252);
+    font-size: 18px;
+}
+
+
+
+
+
+.dot{
+    height: 700px;
+    width: 700px;
+    background-color: rgb(189, 220, 252);
+    border-radius: 100%;
+    display: inline-block;
+    animation: colorChange 7s infinite;
+
+    
+
+}
+
+.dot-text1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(189, 220, 252); 
+    font-size: 24px; 
+    opacity: 1;
+    animation: text1 7s infinite forwards;
+}
+
+.dot-text2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); 
+    font-size: 24px; 
+    opacity: 0;
+    animation: text2 7s infinite forwards;
+    animation-delay: 4s;
+}
+
+.circleicon{
+    width:20px;
+    height:20px;
+    background-color: rgb(189, 220, 252);
+    border-radius: 50%;
+    position: absolute;
+    top:1%;
+    right:1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    transform: translate(3%,3%);
+    animation: buttonani 2s ease-in forwards;
+    animation-delay: 9s;
+}
+
+#menu {
+    background:transparent;
+    position:fixed;
+    top:0;
+    right:-270px;
+    width:400px;
+    height:100vh;
+    transition:all 0.2s;
+    overflow: hidden;
+}
+
+#menu:hover {
+    background:rgb(189, 220, 252);
+    right:0;
+}
+
+#menu:hover .open {
+    opacity:0;
+}
+
+.menu-text {
+    color: #333; 
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.6s;
+    padding-left: 3%;
+    padding-top: 3%;
+    line-height: 18px;
+    
+  }
+
+  #menu:hover .menu-text{
+    opacity: 1;
+  }
+
+  a{
+    color: black;
+    text-decoration:underline;
+    
+  }

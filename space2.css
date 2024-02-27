@@ -1,0 +1,143 @@
+@keyframes move1{
+    0%{
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(900px);
+    }
+    100%{
+        transform: translateX(250px);
+    }
+}
+
+body {
+
+    font-family: "droid-sans-mono", monospace;
+    font-size: 18px;
+    src:url(https://use.typekit.net/qxh7obn.css)
+    
+    
+}
+
+.textbox{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    color: rgb(252, 189, 232);
+    font-size: 18px;
+}
+
+
+.dot1{
+
+    height: 120px;
+    width: 120px;
+    color: rgb(252, 189, 232);
+    border-radius: 100%;
+    display: inline-block;
+    outline-style:solid;
+    animation: move1 5.5s alternate-reverse ease-in-out infinite;
+}
+
+.dot2{
+
+    height: 130px;
+    width: 130px;
+    color: rgb(252, 189, 232);
+    border-radius: 100%;
+    display: inline-block;
+    outline-style:solid;
+    animation: move1 5s alternate-reverse ease-in-out infinite ;
+}
+
+.dot3{
+
+    height: 125px;
+    width: 125px;
+    color: rgb(252, 189, 232);
+    border-radius: 100%;
+    display: inline-block;
+    outline-style:solid;
+    animation: move1 6s alternate-reverse ease-in-out infinite;
+}
+
+.dot4{
+
+    height: 110px;
+    width: 110px;
+    color: rgb(252, 189, 232);
+    border-radius: 100%;
+    background-color: rgb(252, 189, 232);;
+    display: inline-block;
+    outline-style:solid;
+    animation: move1 4s alternate-reverse ease-in-out infinite;
+}
+
+.dot5{
+
+    height: 105px;
+    width: 105px;
+    border-radius: 100%;
+    color: rgb(252, 189, 232);
+    display: inline-block;
+    outline-style:solid;
+    animation: move1 3s alternate-reverse ease-in-out infinite;
+}
+
+
+.circleicon{
+    width:20px;
+    height:20px;
+    background-color: rgb(252, 189, 232);
+    border-radius: 50%;
+    position: absolute;
+    top:1%;
+    right:1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    transform: translate(3%,3%);
+    animation: buttonani 2s ease-in forwards;
+    animation-delay: 9s;
+}
+
+#menu {
+    background:transparent;
+    position:fixed;
+    top:0;
+    right:-270px;
+    width:400px;
+    height:100vh;
+    transition:all 0.2s;
+    overflow: hidden;
+}
+
+#menu:hover {
+    background:rgb(252, 189, 232);
+    right:0;
+}
+
+#menu:hover .open {
+    opacity:0;
+}
+
+.menu-text {
+    color: #333; 
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.6s;
+    padding-left: 3%;
+    padding-top: 3%;
+    line-height: 18px;
+    
+  }
+
+  #menu:hover .menu-text{
+    opacity: 1;
+  }
+
+  a{
+    color: black;
+    text-decoration:underline;
+    
+  }

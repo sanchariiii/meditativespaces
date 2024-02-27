@@ -1,0 +1,372 @@
+body {
+
+    font-family: "droid-sans-mono", monospace;
+    font-size: 18px;
+    src:url(https://use.typekit.net/qxh7obn.css)
+    
+    
+}
+
+.textbox{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    color: rgb(210, 141, 143);
+    font-size: 18px;
+}
+
+.circleicon{
+    width:20px;
+    height:20px;
+    background-color: rgb(210, 141, 143);
+    border-radius: 50%;
+    position: absolute;
+    top:1%;
+    right:1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    transform: translate(3%,3%);
+    
+}
+
+#menu {
+    background:transparent;
+    position:fixed;
+    top:0;
+    right:-270px;
+    width:400px;
+    height:100vh;
+    transition:all 0.2s;
+    overflow: hidden;
+}
+
+#menu:hover {
+    background:rgb(210, 141, 143);
+    right:0;
+}
+
+#menu:hover .open {
+    opacity:0;
+}
+
+.menu-text {
+    color: #333; 
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.6s;
+    padding-left: 3%;
+    padding-top: 3%;
+    line-height: 18px;
+    
+  }
+
+  #menu:hover .menu-text{
+    opacity: 1;
+  }
+
+  a{
+    color: black;
+    text-decoration:underline;
+    
+  }
+
+
+
+  .dot1{
+
+    height: 500px;
+    width: 250px;
+    background-color: rgba(210, 141, 143, 0.211);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:30%;
+    animation: move 30s alternate-reverse ease-in-out infinite;
+}
+
+.dot2{
+
+    height: 480px;
+    width: 230px;
+    background-color: rgba(210, 141, 143, 0.332);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:32%;
+    animation: move 26s alternate-reverse ease-in-out infinite;
+}
+
+.dot3{
+
+    height: 460px;
+    width: 200px;
+    background-color: rgba(210, 141, 143, 0.376);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:34%;
+    animation: move 24s alternate-reverse ease-in-out infinite;
+}
+
+.dot4{
+
+    height: 440px;
+    width: 180px;
+    background-color: rgba(210, 141, 143, 0.572);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:36%;
+    animation: move 20s alternate-reverse ease-in-out infinite;
+}
+
+.dot5{
+
+    height: 420px;
+    width: 160px;
+    background-color: rgba(210, 141, 143, 0.741);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:38%;
+    animation: move 16s alternate-reverse ease-in-out infinite;
+}
+
+.dot6{
+
+    height: 400px;
+    width: 140px;
+    background-color: rgba(210, 141, 143, 0.872);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:40%;
+    animation: move 14s alternate-reverse ease-in-out infinite;
+}
+
+.dot7{
+
+    height: 380px;
+    width: 120px;
+    background-color: rgb(210, 141, 143);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+   top:20%;
+   left:42%;
+    animation: move 10s alternate-reverse ease-in-out infinite;
+}
+
+
+@keyframes move{
+    0%{
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(700px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+
+
+.text1{
+    position: absolute;
+    color: rgb(210, 141, 143);
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text1opacity 8s ease-in-out forwards ;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+@keyframes text1opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text2{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text2opacity 8s ease-out forwards ;
+    animation-delay: 9s;
+    opacity:0;
+}
+
+@keyframes text2opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text3{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text3opacity 8s ease-out forwards ;
+    animation-delay: 17s;
+    opacity:0;
+}
+
+@keyframes text3opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text4{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text4opacity 8s ease-out forwards ;
+    animation-delay: 25s;
+    opacity:0;
+}
+
+@keyframes text4opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text5{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text5opacity 8s ease-out forwards ;
+    animation-delay: 33s;
+    opacity:0;
+}
+
+@keyframes text5opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text6{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text6opacity 8s ease-out forwards ;
+    animation-delay: 42s;
+    opacity:0;
+}
+
+@keyframes text6opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text7{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text7opacity 8s ease-out forwards ;
+    animation-delay: 50s;
+    opacity:0;
+}
+
+@keyframes text7opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text8{
+    position: absolute;
+    color: rgb(210, 141, 143);;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text8opacity 8s ease-out forwards ;
+    animation-delay: 58s;
+    opacity:0;
+}
+
+@keyframes text8opacity{
+    0%{
+        opacity: 0;
+    }      
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

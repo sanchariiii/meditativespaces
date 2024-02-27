@@ -1,0 +1,278 @@
+body {
+    font-family: "droid-sans-mono", monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(191, 229, 232); 
+    transition: background-color 2s ease-out; 
+}
+
+
+a:link,
+a:visited {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+body.loaded {
+    background-color: transparent; 
+  }
+
+@keyframes text1opacity{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+.text1ani{
+    position: absolute;
+    color: #517990;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: text1opacity 5s ease-out forwards ;
+}  
+
+
+@keyframes text2ani{
+    from{
+opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+
+
+.text2ani{
+    color: #000000;
+    position: absolute;
+top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    animation: text2ani 2s ease-in forwards;
+    animation-delay: 6s;
+
+
+}
+
+@keyframes byesidetext{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.byesidetext{
+    animation: byesidetext 1.5s ease-out forwards;
+    animation-delay: 8s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Bounce at the top position */
+    }
+    40% {
+      transform: translateY(-10px); /* Bounce upward */
+    }
+    60% {
+      transform: translateY(-20px); /* Bounce downward */
+    }
+  }
+.button1{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(189, 220, 252);
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 15%;
+    left: 20%;
+    transform: translate(-15%, -20%);
+    animation: bounce 6s ease-in-out infinite;
+}
+.button2{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(252, 189, 232);
+    border: none;
+    padding: 10px 10px;
+   
+    cursor: pointer;
+    border-radius: 5px;
+    top: 40%;
+    left: 80%;
+    transform: translate(-40%, -80%);
+    animation: bounce 7s ease-in-out infinite;
+}
+
+.button3{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(179, 206, 156);
+    border: none;
+    padding: 10px 10px;
+  
+    cursor: pointer;
+    border-radius: 5px;
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%, -30%);
+    animation: bounce 9s ease-in-out infinite;
+}
+
+.button4{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(149, 141, 210);
+    border: none;
+    padding: 10px 10px;
+  
+    cursor: pointer;
+    border-radius: 5px;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%, -60%);
+    animation: bounce 8s ease-in-out infinite;
+}
+
+.button5{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(210, 141, 143);
+    border: none;
+    padding: 10px 10px;
+ 
+    cursor: pointer;
+    border-radius: 5px;
+    top: 70%;
+    left: 10%;
+    transform: translate(-70%, -10%);
+    animation: bounce 6s ease-in-out infinite;
+}
+
+.button6{
+    position: absolute;
+    background-color: #ffffff;
+    color: rgb(255, 199, 115);
+    border: none;
+    padding: 10px 10px;
+  
+    cursor: pointer;
+    border-radius: 5px;
+    top: 85%;
+    left: 70%;
+    transform: translate(-85%, -70%);
+    animation: bounce 7s ease-in-out infinite;
+}
+@keyframes buttonani{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.buttonani{
+    opacity: 0;
+    animation: buttonani 2s ease-in forwards;
+    animation-delay: 9s;
+}
+
+
+
+.circleicon{
+    width:20px;
+    height:20px;
+    background-color: rgb(189, 220, 252);
+    border-radius: 50%;
+    position: absolute;
+    top:1%;
+    right:1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    transform: translate(3%,3%);
+    animation: buttonani 2s ease-in forwards, colorchange 10s ease-in-out infinite;
+    animation-delay: 9s;
+}
+
+@keyframes colorchange{
+    0%{
+        background-color:rgb(189, 220, 252);
+    }
+    20%{
+        
+        background-color:rgb(179, 206, 156);
+    }
+    40%{
+        
+        background-color:rgb(149, 141, 210);
+    }
+    60%{
+        
+        background-color:rgb(210, 141, 143);
+    }
+    80%{
+        
+        background-color:rgb(255, 199, 115);
+    }
+    100%{
+        
+        background-color:rgb(189, 220, 252);
+    }
+    
+}
+
+
+#menu {
+    background:transparent;
+    position:fixed;
+    top:0;
+    right:-270px;
+    width:400px;
+    height:100vh;
+    transition:all 0.6s;
+    overflow: hidden;
+}
+
+#menu:hover {
+    background:rgb(214, 230, 231);
+    right:0;
+    animation: colorchange 10s ease-in-out infinite;
+}
+
+#menu:hover .open {
+    opacity:0;
+}
+
+.menu-text {
+    color: #333; 
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.6s;
+    padding-left: 3%;
+    padding-top: 3%;
+    line-height: 18px;
+    
+  }
+
+  #menu:hover .menu-text{
+    opacity: 1;
+  }
+
+
+
